@@ -74,54 +74,54 @@
         padding: 0;
         box-sizing: border-box;
       }
-
       body {
-        font-family: "Inter", sans-serif;
-        background: #ffffff;
-        color: #1e293b;
-        line-height: 1.5;
-        scroll-behavior: smooth;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #0a0a0a;
+        color: #e0e0e0;
       }
-
-      :root {
-        --primary: #0a2647;
-        --primary-dark: #051a34;
-        --primary-light: #1e3a5f;
-        --accent: #c5a059;
-        --accent-light: #d4b37a;
-        --accent-dark: #9e7b44;
-        --white: #ffffff;
-        --off-white: #f8fafc;
-        --gray-100: #f1f5f9;
-        --gray-200: #e2e8f0;
-        --gray-600: #475569;
-        --gray-800: #1e293b;
-        --dark: #0f172a;
-        --gradient-primary: linear-gradient(135deg, #0a2647 0%, #1e3a5f 100%);
-        --gradient-accent: linear-gradient(135deg, #c5a059 0%, #d4b37a 100%);
-        --shadow-sm: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
-        --shadow-md: 0 20px 40px -20px rgba(0, 0, 0, 0.2);
-        --shadow-lg: 0 30px 60px -30px rgba(0, 0, 0, 0.3);
-        --shadow-accent: 0 20px 40px -15px rgba(197, 160, 89, 0.3);
-      }
-
       .container {
-        max-width: 1280px;
+        max-width: 1200px;
         margin: 0 auto;
-        padding: 0 32px;
+        padding: 0 20px;
       }
 
       /* ===== HEADER ===== */
-      header {
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(8px);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        border-bottom: 1px solid var(--gray-200);
+       header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        border-bottom: 1px solid #222;
+        flex-wrap: wrap;
+      }
+      header .logo {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: #fff;
+        text-decoration: none;
+      }
+      header .logo span {
+        color: #f5a623;
+      }
+      header nav {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+      header nav a {
+        color: #aaa;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      header nav a:hover {
+        color: #fff;
+      }
+      header nav a.cta-nav {
+        color: #f5a623;
+        font-weight: 700;
       }
 
-      .navbar {
+      /* .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -181,7 +181,7 @@
       .nav-links a.active {
         background: var(--accent);
         color: var(--primary-dark) !important;
-      }
+      } */
 
       .btn-consult {
         background: var(--gradient-primary);
@@ -325,11 +325,11 @@
       /* ===== CONTACT INFO CARDS ===== */
       .contact-info-section {
         padding: 80px 0;
-        background: white;
+        background: #0a0a0a;
       }
 
       .contact-info-card {
-        background: white;
+        background: #0a0a0a;
         border-radius: 24px;
         padding: 2rem;
         text-align: center;
@@ -389,7 +389,7 @@
       }
 
       .contact-form-wrapper {
-        background: white;
+        background: #0a0a0a;
         border-radius: 30px;
         padding: 2.5rem;
         box-shadow: var(--shadow-lg);
@@ -435,7 +435,7 @@
       }
 
       .btn-submit {
-        background: var(--gradient-primary);
+        background: #0a0a0a;
         color: white;
         padding: 14px 32px;
         border-radius: 50px;
@@ -467,7 +467,7 @@
       }
 
       .office-hours {
-        background: white;
+        background: #0a0a0a;
         border-radius: 20px;
         padding: 1.5rem;
         border: 1px solid var(--gray-200);
@@ -516,7 +516,7 @@
       /* ===== FAQ ===== */
       .faq-section {
         padding: 80px 0;
-        background: white;
+        background: #0a0a0a;
       }
 
       .faq-grid {
@@ -525,7 +525,7 @@
       }
 
       .faq-item {
-        background: white;
+        background: #0a0a0a;
         border-radius: 20px;
         padding: 20px 28px;
         margin-bottom: 16px;
@@ -693,7 +693,7 @@
           display: none;
           width: 100%;
           flex-direction: column;
-          background: white;
+          background: #0a0a0a;
           padding: 20px 0;
           gap: 1rem;
         }
@@ -757,37 +757,43 @@
   </head>
   <body>
     <!-- ===== HEADER ===== -->
-    <header>
-      <div class="container">
-        <div class="navbar">
-          <a href="index.html" class="logo">
-            <img
-              src="image/onestack-logo.png"
-              alt="OneStack Digital Agency"
-              onerror="this.style.display = 'none'"
-            />
-            <div class="logo-text">
-              <h1>One<span style="color: #c5a059">Stack</span></h1>
-              <p>COMPLETE DIGITAL ECOSYSTEM</p>
-            </div>
-          </a>
-          <div class="menu-toggle" id="mobileMenu">
-            <i class="fas fa-bars"></i>
-          </div>
-          <ul class="nav-links" id="navList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="results.html">Results</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <li><a href="founder.html">Founder</a></li>
-            <li>
-              <a href="audit.html" class="btn-consult">Get Free Audit →</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <header
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        border-bottom: 1px solid #222;
+        flex-wrap: wrap;
+      "
+    >
+      <a
+        href="/"
+        style="
+          font-size: 1.8rem;
+          font-weight: 800;
+          color: #fff;
+          text-decoration: none;
+        "
+      >
+        ONE<span style="color: #f5a623">STACK</span>DA
+      </a>
+      <nav style="display: flex; gap: 25px; flex-wrap: wrap">
+        <a href="/" style="color: #aaa; text-decoration: none; font-weight: 500"
+          >Home</a
+        >
+        <a
+          href="/services.html"
+          style="color: #aaa; text-decoration: none; font-weight: 500"
+          >Services</a
+        >
+        
+        <a
+          href="/contact.html"
+          style="color: #f5a623; text-decoration: none; font-weight: 700"
+          >Contact</a
+        >
+      </nav>
     </header>
 
     <!-- ===== HERO ===== -->
@@ -1148,56 +1154,30 @@
 
     <!-- ===== FOOTER ===== -->
     <footer>
-      <div class="container" style="max-width: 1200px">
-        <div class="footer-grid">
-          <div class="footer-col">
-            <h4>OneStack</h4>
-            <p>
-              Complete Digital Ecosystem — We build, grow & secure your online
-              presence.
-            </p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-x-twitter"></i></a>
-            </div>
-          </div>
-          <div class="footer-col">
-            <h4>Services</h4>
-            <a href="services.html">Web & E‑commerce</a>
-            <a href="services.html">Digital Marketing</a>
-            <a href="ai-automation.html">AI & Automation</a>
-            <a href="services.html">Cybersecurity</a>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <a href="about.html">About OneStack</a>
-            <a href="results.html">Results</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <div class="footer-col">
-            <h4>Get in touch</h4>
-            <p>oborimusa@gmail.com</p>
-            <p>+234 803 966 1354</p>
-            <p>Remote-first / Osogbo</p>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>
-            &copy; 2026 OneStack Digital Agency — Complete Digital Ecosystem.
-            Built in Nigeria for African businesses.
-          </p>
-          <p style="margin-top: 8px">
-            <a href="privacy-policy.html" style="color: var(--off-white)"
-              >Privacy Policy</a
-            >
-            <a href="terms-conditions.html" style="color: var(--off-white)"
-              >Terms & Conditions</a
-            >
-          </p>
-        </div>
-      </div>
+      <p>
+        © 2026 OneStackDA. Built with <span style="color: #f5a623">☕</span> and
+        zero BS.
+      </p>
+      <p style="font-size: 0.8rem; margin-top: 5px">
+        Lagos, Nigeria |
+        <a
+          href="mailto:hello@onestackda.com"
+          style="color: #f5a623; text-decoration: none"
+          >hello@onestackda.com</a
+        >
+        |
+        <a
+          href="/privacy-policy.html"
+          style="color: #666; text-decoration: none"
+          >Privacy</a
+        >
+        |
+        <a
+          href="/terms-conditions.html"
+          style="color: #666; text-decoration: none"
+          >Terms</a
+        >
+      </p>
     </footer>
 
     <!-- ===== SCRIPTS ===== -->
