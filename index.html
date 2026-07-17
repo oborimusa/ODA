@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OneStackDA - Build Your Empire</title>
-    <!-- Font Awesome for Icons -->
+    <title>OneStackDA - Websites, Logins & Ads for Nigerian Brands</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -73,7 +72,7 @@
         font-weight: 700;
       }
 
-      /* --- HERO SECTION --- */
+      /* --- HERO --- */
       .hero {
         text-align: center;
         padding: 60px 20px 40px;
@@ -138,17 +137,54 @@
         box-shadow: 0 10px 30px rgba(245, 166, 35, 0.3);
       }
 
-      .cta-btn-white {
-        background: #fff;
-        color: #0a0a0a;
+      /* --- TRUSTED BY (CLIENT LOGOS) --- */
+      .trusted-section {
+        padding: 40px 20px;
+        text-align: center;
+        border-bottom: 1px solid #222;
       }
 
-      .cta-btn-white:hover {
-        background: #e0e0e0;
-        box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+      .trusted-section h2 {
+        font-size: 1.2rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        font-weight: 400;
       }
 
-      /* --- PROMISE GRID --- */
+      .client-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px 60px;
+      }
+
+      .client-item {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #aaa;
+        border: 1px solid #222;
+        padding: 12px 25px;
+        border-radius: 40px;
+        background: #111;
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+      }
+
+      .client-item:hover {
+        border-color: #f5a623;
+        color: #fff;
+        background: #1a1a1a;
+      }
+
+      .client-item .fa-check-circle {
+        color: #f5a623;
+        margin-right: 8px;
+        font-size: 0.9rem;
+      }
+
+      /* --- PROMISE GRID (Now focused on your actual expertise) --- */
       .promise-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -200,7 +236,7 @@
         padding-bottom: 2px;
       }
 
-      /* --- HONEST METRICS --- */
+      /* --- HONEST METRICS (Updated with real numbers) --- */
       .honest-metrics {
         background: #111;
         border-radius: 20px;
@@ -238,7 +274,7 @@
         margin-right: 5px;
       }
 
-      /* --- OFFER BANNER --- */
+      /* --- OFFER BANNER (Now a Free Ad Audit) --- */
       .offer-banner {
         background: linear-gradient(135deg, #1a1205 0%, #0a0a0a 100%);
         border: 2px solid #f5a623;
@@ -251,7 +287,7 @@
       }
 
       .offer-banner::before {
-        content: "FIRST 5";
+        content: "AUDIT";
         position: absolute;
         right: -40px;
         top: -30px;
@@ -279,22 +315,6 @@
         color: #b0b0b0;
         font-size: 1.1rem;
         line-height: 1.6;
-      }
-
-      .offer-banner .price-tag {
-        display: inline-block;
-        background: #0a0a0a;
-        padding: 5px 20px;
-        border-radius: 50px;
-        border: 1px solid #333;
-        color: #fff;
-        font-weight: 600;
-        margin-bottom: 20px;
-      }
-
-      .offer-banner .price-tag span {
-        color: #f5a623;
-        font-size: 1.2rem;
       }
 
       .small-note {
@@ -348,6 +368,13 @@
         header nav {
           justify-content: center;
         }
+        .client-grid {
+          gap: 15px;
+        }
+        .client-item {
+          font-size: 0.9rem;
+          padding: 8px 16px;
+        }
       }
     </style>
   </head>
@@ -359,7 +386,7 @@
           ONE<span>STACK</span>DA
         </a>
         <nav>
-          <a href="/" style="color: #f5a623; text-decoration: none; font-weight: 700">Home</a>
+          <a href="/" class="cta-nav">Home</a>
           <a href="/services.html">Services</a>
           <a href="/contact.html">Contact</a>
         </nav>
@@ -368,115 +395,129 @@
       <!-- HERO -->
       <section class="hero">
         <div class="badge">
-          <i class="fas fa-bolt" style="margin-right: 8px"></i> NEW AGENCY ALERT
+          <i class="fas fa-bolt" style="margin-right: 8px"></i> TRUSTED BY REAL
+          NIGERIAN BRANDS
         </div>
-        <h1>No Hype. <span class="highlight">Just Hard Work.</span></h1>
+        <h1>We Build <span class="highlight">Websites & Logins</span> That Work.</h1>
         <p>
-          We don't have a portfolio full of corporate logos. We have
-          <strong>10,000+ hours</strong> of combined dev experience and a
-          burning need to prove ourselves.
+          We've built custom portals for <strong>Buffet On Travels</strong>,
+          websites for <strong>Jobpitality</strong> & <strong>Drecot Consults</strong>,
+          and we specialize in <strong>Digital Advertising</strong> that actually
+          converts. No fluff. Just code and results.
         </p>
-        <!-- REPLACE # WITH YOUR WHATSAPP OR CALENDLY LINK -->
-        <a href="https://wa.me/234XXXXXXXXXX" class="cta-btn">
+        <a href="https://wa.me/2348039661354" class="cta-btn">
           <i class="fas fa-rocket" style="margin-right: 10px"></i> Book a Free
           Strategy Call
         </a>
       </section>
 
-      <!-- PROMISE GRID -->
+      <!-- TRUSTED BY (Your real clients) -->
+      <section class="trusted-section">
+        <h2>Recent Projects</h2>
+        <div class="client-grid">
+          <span class="client-item"
+            ><i class="fas fa-check-circle"></i> Jobpitality</span
+          >
+          <span class="client-item"
+            ><i class="fas fa-check-circle"></i> Drecot Consults</span
+          >
+          <span class="client-item"
+            ><i class="fas fa-check-circle"></i> T Data Connect</span
+          >
+          <span class="client-item"
+            ><i class="fas fa-check-circle"></i> Buffet On Travels</span
+          >
+        </div>
+        <p style="color: #555; font-size: 0.9rem; margin-top: 25px;">
+          *Login systems, websites, and ad management for these brands.
+        </p>
+      </section>
+
+      <!-- PROMISE GRID (What you actually do) -->
       <div class="promise-grid">
         <div class="promise-card">
-          <span class="icon"><i class="fas fa-handshake"></i></span>
-          <h3>Risk-Free Start</h3>
+          <span class="icon"><i class="fas fa-laptop-code"></i></span>
+          <h3>Custom Websites & Logins</h3>
           <p>
-            Not happy with the first 30 days? We refund 100% of your setup fee.
-            No questions. We'd rather earn your trust than keep your money.
+            From corporate websites to secure user login dashboards. We build
+            clean, fast systems tailored for Nigerian SMEs.
           </p>
-          <span class="tag">30-Day Guarantee</span>
+          <span class="tag">Built for Travel & Tech</span>
         </div>
 
         <div class="promise-card">
-          <span class="icon"><i class="fas fa-code"></i></span>
-          <h3>Talk to the Dev</h3>
+          <span class="icon"><i class="fas fa-chart-line"></i></span>
+          <h3>Digital Advertising</h3>
           <p>
-            No account managers. No chatbots. You get direct access to the
-            developer building your site. Real-time updates, no middlemen.
+            Google & Social Media ads managed by someone who tracks every kobo.
+            We specialize in getting ROI for service-based businesses.
           </p>
-          <span class="tag">Direct Access</span>
+          <span class="tag">Ad Spend Specialist</span>
         </div>
 
         <div class="promise-card">
-          <span class="icon"><i class="fas fa-file-invoice"></i></span>
-          <h3>Zero Lock-Ins</h3>
+          <span class="icon"><i class="fas fa-user-tie"></i></span>
+          <h3>Direct Access</h3>
           <p>
-            Month-to-month hosting. No annual contracts. Cancel anytime. We make
-            it painfully easy to leave—because we know you won't want to.
+            No account managers. You talk directly to the developer who built
+            Jobpitality & Buffet On Travels. Real-time updates, zero gatekeeping.
           </p>
-          <span class="tag">No Hidden Fees</span>
+          <span class="tag">Talk to the Dev</span>
         </div>
       </div>
 
-      <!-- HONEST METRICS -->
+      <!-- HONEST METRICS (Updated with actual data) -->
       <div class="honest-metrics">
         <div class="metric-item">
-          <span class="number">0</span>
+          <span class="number">4+</span>
           <span class="label"
-            ><i class="fas fa-users"></i> Paying Clients (Yet)</span
-          >
-        </div>
-        <div class="metric-item">
-          <span class="number">10,000+</span>
-          <span class="label"
-            ><i class="fas fa-clock"></i> Dev Hours Experience</span
-          >
-        </div>
-        <div class="metric-item">
-          <span class="number">5</span>
-          <span class="label"
-            ><i class="fas fa-star"></i> Founding Client Slots Left</span
+            ><i class="fas fa-briefcase"></i> Active Projects</span
           >
         </div>
         <div class="metric-item">
           <span class="number">100%</span>
           <span class="label"
-            ><i class="fas fa-heart"></i> Obsession with Your ROI</span
+            ><i class="fas fa-code"></i> Custom Coded</span
+          >
+        </div>
+        <div class="metric-item">
+          <span class="number">2hrs</span>
+          <span class="label"
+            ><i class="fas fa-clock"></i> Avg. Response Time</span
+          >
+        </div>
+        <div class="metric-item">
+          <span class="number">✔️</span>
+          <span class="label"
+            ><i class="fas fa-ad"></i> Digital Ads Expert</span
           >
         </div>
       </div>
 
-      <!-- OFFER BANNER -->
+      <!-- OFFER BANNER (Free Ad Audit) -->
       <div class="offer-banner">
-        <h2>We Need <span>Your</span> Success Story</h2>
+        <h2>Want More <span>Customers</span>?</h2>
         <p>
-          We're building our case studies from scratch. If you sign up as one of
-          our first
-          <strong>5 partners</strong>, we're giving you
-          <strong>lifetime hosting discounts</strong>
-          and a dedicated developer. Your results become our reputation.
+          I will audit your current Google/Facebook ads for free. If I can't
+          find wasted spend or missed opportunities, I'll send you
+          <strong>₦10,000</strong> for wasting your time. No strings attached.
         </p>
-        <div class="price-tag">
-          <i class="fas fa-tag" style="color: #f5a623; margin-right: 10px"></i>
-          Founding Partner Rate: <span>₦150,000</span> (One-time setup)
-        </div>
-        <br />
-        <!-- REPLACE # WITH YOUR WHATSAPP OR CALENDLY LINK -->
-        <a href="https://wa.me/234XXXXXXXXXX" class="cta-btn cta-btn-white">
-          <i class="fas fa-lock" style="margin-right: 10px"></i> Secure Your
-          Slot
+        <a href="https://wa.me/2348039661354" class="cta-btn" style="background: #fff; color: #0a0a0a;">
+          <i class="fas fa-search" style="margin-right: 10px"></i> Claim Your
+          Free Ad Audit
         </a>
         <p class="small-note">
-          * Only 4 slots remain. Once we have 5 case studies, prices double.
+          * Only 3 audits available this week. First come, first served.
         </p>
       </div>
 
       <!-- FOOTER -->
       <footer>
-        <p>© 2026 OneStackDA. Built with <span style="color: #f5a623;">☕</span> and zero BS.</p>
+        <p>© 2026 OneStackDA. Built for <span style="color: #f5a623;">Nigerian Brands</span>.</p>
         <p style="font-size: 0.8rem; margin-top: 5px;">
           Lagos, Nigeria |
           <a href="mailto:hello@onestackda.com">hello@onestackda.com</a> |
-          <a href="/privacy-policy.html" style="color: #666; text-decoration: none;">Privacy</a> |
-          <a href="/terms-conditions.html" style="color: #666; text-decoration: none;">Terms</a>
+          <a href="/privacy-policy.html" style="color: #666; text-decoration: none;">Privacy</a>
         </p>
       </footer>
     </div>
