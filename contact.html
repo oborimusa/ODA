@@ -86,7 +86,7 @@
       }
 
       /* ===== HEADER ===== */
-       header {
+      header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -770,13 +770,77 @@
       <a
         href="/"
         style="
-          font-size: 1.8rem;
-          font-weight: 800;
-          color: #fff;
+          display: flex;
+          align-items: center;
           text-decoration: none;
+          height: 50px;
         "
       >
-        ONE<span style="color: #f5a623">STACK</span>DA
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 400 120"
+          height="45"
+          style="vertical-align: middle"
+        >
+          <!-- Top Block -->
+          <rect x="10" y="15" width="55" height="22" rx="6" fill="#f5a623" />
+          <!-- Middle Block -->
+          <rect
+            x="25"
+            y="49"
+            width="55"
+            height="22"
+            rx="6"
+            fill="#f5a623"
+            opacity="0.85"
+          />
+          <!-- Bottom Block -->
+          <rect
+            x="10"
+            y="83"
+            width="55"
+            height="22"
+            rx="6"
+            fill="#f5a623"
+            opacity="0.7"
+          />
+          <!-- "ONE" in White -->
+          <text
+            x="85"
+            y="62"
+            font-family="'Segoe UI', Arial, sans-serif"
+            font-weight="800"
+            font-size="42"
+            fill="#ffffff"
+            letter-spacing="1"
+          >
+            ONE
+          </text>
+          <!-- "STACK" in Gold -->
+          <text
+            x="200"
+            y="62"
+            font-family="'Segoe UI', Arial, sans-serif"
+            font-weight="800"
+            font-size="42"
+            fill="#f5a623"
+            letter-spacing="1"
+          >
+            STACK
+          </text>
+          <!-- "DA" in Grey -->
+          <text
+            x="340"
+            y="62"
+            font-family="'Segoe UI', Arial, sans-serif"
+            font-weight="700"
+            font-size="24"
+            fill="#888888"
+            letter-spacing="1"
+          >
+            DA
+          </text>
+        </svg>
       </a>
       <nav style="display: flex; gap: 25px; flex-wrap: wrap">
         <a href="/" style="color: #aaa; text-decoration: none; font-weight: 500"
@@ -787,7 +851,7 @@
           style="color: #aaa; text-decoration: none; font-weight: 500"
           >Services</a
         >
-        
+
         <a
           href="/contact.html"
           style="color: #f5a623; text-decoration: none; font-weight: 700"
