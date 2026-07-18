@@ -2,12 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services - OneStackDA</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon-16x16.png"
+    />
+
+    <!-- ===== SEO ===== -->
+    <title>Our Services – OneStackDA Digital Agency for Nigerian SMEs</title>
+    <meta
+      name="description"
+      content="We build custom websites, hotel management apps, Google Ads, and AI automation for Nigerian SMEs. No middlemen. Direct dev access."
+    />
+    <meta
+      name="keywords"
+      content="OneStackDA, web design Nigeria, hotel management app, Google Ads Lagos, AI automation, SME digital solutions"
+    />
+    <meta name="author" content="OneStackDA" />
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta
+      property="og:title"
+      content="Our Services – OneStackDA Digital Agency"
+    />
+    <meta
+      property="og:description"
+      content="Custom websites, hotel management systems, Google Ads, and AI automation for Nigerian SMEs."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://onestackda.com/services.html" />
+
+    <!-- ===== FONT AWESOME ===== -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
     <style>
       * {
         margin: 0;
@@ -53,7 +102,6 @@
         color: #f5a623;
       }
 
-      /* Navigation - desktop */
       header nav {
         display: flex;
         gap: 25px;
@@ -76,7 +124,6 @@
         font-weight: 700;
       }
 
-      /* Hamburger button - hidden on desktop */
       .hamburger {
         display: none;
         background: none;
@@ -90,6 +137,21 @@
 
       .hamburger:hover {
         color: #f5a623;
+      }
+
+      /* ===== BADGE ===== */
+      .badge {
+        display: inline-block;
+        background: #2a2a2a;
+        color: #f5a623;
+        padding: 6px 18px;
+        border-radius: 30px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: 1px solid #333;
+        margin-bottom: 20px;
       }
 
       /* ===== SERVICES HERO ===== */
@@ -120,6 +182,26 @@
         max-width: 600px;
         margin: 20px auto;
         line-height: 1.6;
+      }
+
+      .cta-btn {
+        background: #f5a623;
+        color: #0a0a0a;
+        padding: 16px 40px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .cta-btn:hover {
+        transform: scale(1.05);
+        background: #ffb84d;
+        box-shadow: 0 10px 30px rgba(245, 166, 35, 0.3);
       }
 
       /* ===== SERVICE GRID ===== */
@@ -429,11 +511,18 @@
 
       <!-- ===== SERVICES HERO ===== -->
       <section class="services-hero">
+        <div class="badge">
+          <i class="fas fa-bolt" style="margin-right: 8px"></i> WHAT WE DO
+        </div>
         <h1>What We <span>Actually</span> Build</h1>
         <p>
-          We don't do "everything." We specialize in three areas — and we do
-          them obsessively.
+          We focus on what actually delivers results — websites, ads, and
+          automation. No fluff. Just code.
         </p>
+        <a href="https://wa.me/2348039661354" class="cta-btn" style="margin-top: 20px;">
+          <i class="fas fa-rocket" style="margin-right: 10px"></i> Book a Free
+          Strategy Call
+        </a>
       </section>
 
       <!-- ===== SERVICE GRID ===== -->
