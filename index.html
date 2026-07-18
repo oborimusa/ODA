@@ -2,17 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OneStackDA - Digital Agency for Nigerian SMEs</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon-16x16.png"
+    />
+
+    <!-- ===== SEO ===== -->
+    <title>OneStackDA – Digital Agency for Nigerian SMEs</title>
     <meta
       name="description"
-      content="Nigerian digital agency for SMEs. We build e-commerce stores, run Google Ads, and automate workflows. No middlemen. Direct developer access. 30-day risk-free."
+      content="We build custom websites, apps, and logins for Nigerian SMEs. Google Ads, AI automation, and hotel management systems. No middlemen. Direct dev access."
     />
-    <!-- Font Awesome -->
+    <meta
+      name="keywords"
+      content="OneStackDA, digital agency Nigeria, web design Lagos, Google Ads, hotel management app, SME solutions"
+    />
+    <meta name="author" content="OneStackDA" />
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta
+      property="og:title"
+      content="OneStackDA – Digital Agency for Nigerian SMEs"
+    />
+    <meta
+      property="og:description"
+      content="We build websites, apps, and logins that actually work. Trusted by Jobpitality, 4T Luxury Hotel, and more."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://onestackda.com/" />
+
+    <!-- ===== FONT AWESOME ===== -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
     <style>
       * {
         margin: 0;
@@ -34,7 +78,7 @@
         width: 100%;
       }
 
-      /* --- HEADER RESPONSIVE --- */
+      /* ===== HEADER RESPONSIVE ===== */
       .header-container {
         display: flex;
         justify-content: space-between;
@@ -58,7 +102,6 @@
         color: #f5a623;
       }
 
-      /* Navigation - desktop */
       header nav {
         display: flex;
         gap: 25px;
@@ -81,7 +124,6 @@
         font-weight: 700;
       }
 
-      /* Hamburger button - hidden on desktop */
       .hamburger {
         display: none;
         background: none;
@@ -97,7 +139,7 @@
         color: #f5a623;
       }
 
-      /* --- HERO --- */
+      /* ===== HERO ===== */
       .hero {
         text-align: center;
         padding: 60px 20px 40px;
@@ -162,7 +204,7 @@
         box-shadow: 0 10px 30px rgba(245, 166, 35, 0.3);
       }
 
-      /* --- TRUSTED BY --- */
+      /* ===== TRUSTED BY ===== */
       .trusted-section {
         padding: 40px 20px;
         text-align: center;
@@ -209,7 +251,7 @@
         font-size: 0.9rem;
       }
 
-      /* --- PROMISE GRID --- */
+      /* ===== PROMISE GRID ===== */
       .promise-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -261,7 +303,7 @@
         padding-bottom: 2px;
       }
 
-      /* --- HONEST METRICS --- */
+      /* ===== HONEST METRICS ===== */
       .honest-metrics {
         background: #111;
         border-radius: 20px;
@@ -299,7 +341,7 @@
         margin-right: 5px;
       }
 
-      /* --- OFFER BANNER --- */
+      /* ===== OFFER BANNER ===== */
       .offer-banner {
         background: linear-gradient(135deg, #1a1205 0%, #0a0a0a 100%);
         border: 2px solid #f5a623;
@@ -348,7 +390,7 @@
         margin-top: 15px;
       }
 
-      /* --- FOOTER --- */
+      /* ===== FOOTER ===== */
       footer {
         text-align: center;
         padding: 40px 20px;
@@ -367,7 +409,7 @@
         text-decoration: underline;
       }
 
-      /* --- RESPONSIVE --- */
+      /* ===== RESPONSIVE ===== */
       @media (max-width: 768px) {
         .header-container {
           flex-wrap: nowrap;
@@ -473,7 +515,7 @@
   </head>
   <body>
     <div class="container">
-      <!-- HEADER -->
+      <!-- ===== HEADER ===== -->
       <header>
         <div class="header-container">
           <a href="/" class="logo">
@@ -544,7 +586,12 @@
             </svg>
           </a>
 
-          <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
             <i class="fas fa-bars"></i>
           </button>
 
@@ -556,7 +603,7 @@
         </div>
       </header>
 
-      <!-- HERO -->
+      <!-- ===== HERO ===== -->
       <section class="hero">
         <div class="badge">
           <i class="fas fa-bolt" style="margin-right: 8px"></i> TRUSTED BY REAL
@@ -576,7 +623,7 @@
         </a>
       </section>
 
-      <!-- TRUSTED BY -->
+      <!-- ===== TRUSTED BY ===== -->
       <section class="trusted-section">
         <h2>Recent Projects</h2>
         <div class="client-grid">
@@ -591,7 +638,7 @@
         </p>
       </section>
 
-      <!-- PROMISE GRID -->
+      <!-- ===== PROMISE GRID ===== -->
       <div class="promise-grid">
         <div class="promise-card">
           <span class="icon"><i class="fas fa-laptop-code"></i></span>
@@ -624,7 +671,7 @@
         </div>
       </div>
 
-      <!-- HONEST METRICS -->
+      <!-- ===== HONEST METRICS ===== -->
       <div class="honest-metrics">
         <div class="metric-item">
           <span class="number">5+</span>
@@ -644,7 +691,7 @@
         </div>
       </div>
 
-      <!-- OFFER BANNER -->
+      <!-- ===== OFFER BANNER ===== -->
       <div class="offer-banner">
         <h2>Want More <span>Customers</span>?</h2>
         <p>
@@ -661,18 +708,19 @@
         </p>
       </div>
 
-      <!-- FOOTER -->
+      <!-- ===== FOOTER ===== -->
       <footer>
         <p>© 2026 OneStackDA. Built for <span style="color: #f5a623;">Nigerian Brands</span>.</p>
         <p style="font-size: 0.8rem; margin-top: 5px;">
           Lagos, Nigeria |
           <a href="mailto:info@onestackda.com">info@onestackda.com</a> |
-          <a href="/privacy-policy.html" style="color: #666; text-decoration: none;">Privacy</a>
+          <a href="/privacy-policy.html" style="color: #666; text-decoration: none;">Privacy</a> |
+          <a href="/terms-conditions.html" style="color: #666; text-decoration: none;">Terms</a>
         </p>
       </footer>
     </div>
 
-    <!-- JavaScript: Hamburger Menu Toggle -->
+    <!-- ===== JAVASCRIPT: HAMBURGER MENU TOGGLE ===== -->
     <script>
       const hamburger = document.getElementById('hamburger');
       const navMenu = document.getElementById('nav-menu');
